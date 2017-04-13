@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="description" content="Exemplary solution for Quiz App challenge in Thinkful's Front End Web Development course">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Parks and Rec Quiz</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="box">
+      <div id="start-box">
+        <h1>Parks and Rec Quiz</h1>
+        <img src="pics/Title.jpg" alt="Parks and Rec Cast" class="pic">
+        <p>This app tests your knowledge about the best TV show ever made!</em>
+        </p>
+        <form id="start">
+          <button type="submit" id='start'>start</button>
+        </form>
+      </div>
+
+      <div id='question-box'>
+        <div id="question-pic-box"><img src="" alt="" id="question-pic" class='pic'></div>
+        <h2><span class="question-count">Question: <span  id="count">  </span> of 5</h2>
+        <h3><span id="question-title"></span></h3>
+        <form id="submit-answer">
+          <ul id="choices"></ul>
+          <button class="button">Submit</button>
+        </form>
+        <form id="restart">
+          <button class="button" id="restart">Start over</button>
+        </form>
+      </div>
+      <div id="results-box">
+        <h1>Your Final Score: <span id='final-score'></span> out of 5 questions correct!</h1>
+        <img src="pics/leslieknope-list-bastard-2.gif" alt="Leslie Knopp Gif" id="knopp">
+        <form id="restart">
+          <button class="button" id="restart">Start over</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
