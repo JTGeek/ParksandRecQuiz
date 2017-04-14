@@ -35,7 +35,7 @@ body {
   position: relative;
 }
 
-#logo {
+.logo {
   display: none;
   margin: auto;
   width: 400px;
