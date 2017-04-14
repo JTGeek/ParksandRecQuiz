@@ -4,7 +4,7 @@
 }
 
 button {
-  float: right !important;
+  float: right
 }
 
 .title {
@@ -40,8 +40,8 @@ button {
   display: none;
 }
 
-.button {
-  float: left;
+#instant-answer-box {
+  display: none;
 }
 
 .pic {

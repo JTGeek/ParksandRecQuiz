@@ -15,9 +15,9 @@ var state = {
     },
     {
       image: 'pics/Chris-Pratt-before-after.jpg',
-      title: 'What did Andy stop doing to loose his weight?',
-      choices: ['Drinking Soda', 'Eating Donuts', 'Exercising', 'Drinking Beer'],
-      correct: 'Drinking Beer'
+      title: 'What did Andy cut in order to loose his weight?',
+      choices: ['Soda', 'Donuts', 'Exercising', 'Beer'],
+      correct: 'Beer'
     },
     {
       image: 'pics/jamm-548x335.jpg',
@@ -50,6 +50,7 @@ function generate() {
   var question = state.questions[state.current];
 
   $('#count').text(state.current + 1);
+  $('#current-score-count').text(state.score);
   $('#question-title').text(question.title);
   $("#question-pic").attr('src', question.image);
   $('#question-pic').attr('class', 'pic');
@@ -69,10 +70,11 @@ $('#submit-answer').submit(function (event) {
 
   if (value === state.questions[state.current].correct) {
     state.score++;
-    console.log("Congrats!!! That is correct")
+    alert("Congrats!!! That is correct");
   } else {
-    console.log("Sorry; That's Incorrect");
+    alert("Sorry; That's Incorrect. The correct answer was " + state.questions[state.current].correct);
   }
+  //$('#question-box').hide();
   $('.choices').empty();
   $('.title').empty();
   state.current++;
@@ -80,7 +82,10 @@ $('#submit-answer').submit(function (event) {
 
 });
 
-$('#restart').on('click', function () {
+
+
+$('#restart').submit(function (event) {
+  event.preventDefault();
   $('.choices').empty();
   $('.title').empty();
   state.current = 0;
