@@ -24,6 +24,10 @@ button {
   position: relative;
 }
 
+#current-score-count {
+  color: green;
+}
+
 #start-box {
   display: inline;
 }
