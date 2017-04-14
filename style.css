@@ -21,6 +21,10 @@ body {
   font-weight: 900;
 }
 
+img {
+  max-width: 600px;
+}
+
 .container {
   background: white;
   width: 700px;
