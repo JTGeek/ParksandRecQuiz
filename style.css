@@ -1,10 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900');
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+button {
+  float: right !important;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+.title span {
+  font-weight: 900;
+}
+
 .container {
-  width: 1000px;
+  width: 600px;
   margin: 0 auto;
+  display: block;
+  position: relative;
 }
 
 #start-box {
   display: inline;
+}
+
+#start {
+  float: right;
 }
 
 #question-box {
@@ -20,7 +45,42 @@
 }
 
 .pic {
-  position: center;
   width: 600px;
   max-height: 600px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #323037;
+  color: #ffffff !important;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 3.15em;
+  line-height: 3.25em;
+  padding: 0 2.2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
 }
