@@ -10,24 +10,26 @@
 </head>
 
 <body>
+  <div><img id="logo" src="pics/logo.png"></div>
 
-  <div class="container">
+  <div id="container" class="container">
 
     <div class="box">
       <div id="start-box">
-        <h1>Parks and Rec Quiz</h1>
+
         <img src="pics/Title.jpg" alt="Parks and Rec Cast" class="pic">
-        <p>This app tests your knowledge about the best TV show ever made!</em>
+        <p id="subtitle">This app tests your knowledge about the best TV show ever made!</em>
         </p>
         <form id="start">
           <button type="submit" id='start'>start</button>
         </form>
+        <h1 id="quizHeading">The Quiz</h1>
       </div>
 
       <div id='question-box'>
         <div id="question-pic-box"><img src="" alt="" id="question-pic" class='pic'></div>
         <div>
-          <h2><span class="question-count">Question: <span  id="count">  </span> of 5</h2>
+          <h2 id="counterText"><span class="question-count">Question: <span  id="count">  </span> of 5</h2>
           <h2 id="scorebox">Current Score: <span id="current-score-count"></span></h2>
         </div>
 
@@ -43,7 +45,7 @@
 
       <div id="results-box">
         <h1>Your Final Score:<br> <span id='final-score'></span> out of 5 questions correct!</h1>
-        <img src="pics/leslieknope-list-bastard-2.gif" alt="Leslie Knopp Gif" id="knopp">
+        <img src="https://m.popkey.co/77534d/jdykY.gif" alt="Leslie Knopp Gif" id="knopp">
         <form id="restart">
           <button class="button" id="restart">Start over</button>
         </form>

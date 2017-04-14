@@ -9,7 +9,7 @@ var state = {
     },
     {
       image: 'pics/Painting-Leslie-large.jpg',
-      title: "Who accidently painted Lesie and Tom's faces onto mythological creatures?",
+      title: "Who accidently painted Lesie's face onto a centaur?",
       choices: ['Jerry', 'Donna', 'Terry', 'Andy'],
       correct: 'Jerry'
     },
@@ -100,6 +100,8 @@ $('#start').submit(function (event) {
 
   $('#start-box').hide();
   $('#question-box').css('display', 'inline-block');
+  $('#logo').css('display', 'block');
+  // $('#container').css('height', 'auto');
 
   generate();
 

@@ -7,6 +7,10 @@ button {
   float: right
 }
 
+body {
+  background-image: url("pics/backgrd2.jpg");
+}
+
 .title {
   text-transform: uppercase;
   font-weight: 300;
@@ -18,14 +22,52 @@ button {
 }
 
 .container {
-  width: 600px;
+  background: white;
+  width: 700px;
+  height: 800px;
   margin: 0 auto;
   display: block;
   position: relative;
 }
 
+.box {
+  align-content: center;
+  position: relative;
+}
+
+#logo {
+  display: none;
+  margin: auto;
+  width: 400px;
+  padding-bottom: 1px;
+}
+
 #scorebox {
   float: right;
+}
+
+#subtitle {
+  padding-left: 50px;
+}
+
+#quizHeading {
+  padding-left: 50px;
+  color: green;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+#question-title,
+#choices {
+  padding-left: 50px;
+}
+
+#results-box {
+  padding-left: 100px;
+}
+
+#counterText {
+  padding-left: 50px;
 }
 
 h2 {
@@ -42,6 +84,7 @@ h2 {
 
 #start {
   float: right;
+  padding-right: 50px;
 }
 
 #question-box {
@@ -58,7 +101,8 @@ h2 {
 
 .pic {
   width: 600px;
-  max-height: 600px;
+  padding-top: 15px;
+  padding-left: 50px;
 }
 
 input[type="submit"],
@@ -74,7 +118,7 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #323037;
+  background-color: green;
   color: #ffffff !important;
   border: 0;
   cursor: pointer;
