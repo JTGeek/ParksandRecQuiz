@@ -9,6 +9,8 @@ button {
 
 body {
   background-image: url("pics/backgrd2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -50,10 +52,6 @@ img {
   float: right;
 }
 
-#subtitle {
-  padding-left: 50px;
-}
-
 #quizHeading {
   padding-left: 50px;
   color: green;
@@ -88,7 +86,6 @@ h2 {
 
 #start {
   float: right;
-  padding-right: 50px;
 }
 
 #question-box {
@@ -97,6 +94,11 @@ h2 {
 
 #results-box {
   display: none;
+}
+
+#startPageText {
+  width: 600px;
+  margin: 0 auto;
 }
 
 #instant-answer-box {
