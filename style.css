@@ -88,6 +88,7 @@ h2 {
 
 #start {
   float: right;
+  padding-right: 50px;
 }
 
 #question-box {
